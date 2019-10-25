@@ -1,19 +1,19 @@
 def starts_with_a_vowel?(word)
   if word.match(/\b[aeiouAEIOU]+\w/) != nil 
-    return true 
+    true 
   else 
-    return false 
+    false 
   end 
 
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-   return text.scan(/\b[un]+\w+ing/) 
+  text.scan(/\b[un]+\w+ing/) 
 
 end
 
 def words_five_letters_long(text)
- return text.scan(/\b\w{5}\b/)
+text.scan(/\b\w{5}\b/)
 
 end
 
@@ -25,8 +25,8 @@ end
 def valid_phone_number?(phone)
    what = phone.scan(/\d/)
    if what.size == 10 
-     return true 
-   else return false 
+     true 
+   else false 
    end 
 
   
